@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('chatspace.factories', []).
+angular.module('chatspaces.factories', []).
   factory('authenticate', function ($rootScope, $http, $location, $window, user) {
     var resetUser = function () {
       socket.emit('disconnect', {
